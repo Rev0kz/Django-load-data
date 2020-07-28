@@ -38,7 +38,7 @@ Use the command to create a postgres database named supermarket:
 `CREATE DATABASE supermarket` 
 
 ### Edit django settings.py file 
-edit the settings.py file in django and replace the database configuration settings with that of database_config.py file
+edit the settings.py file in django and replace the database configuration settings with that of `database_config.py` file
 
 ### Launch django shell
 Execute the following command to launch the django shell:  
