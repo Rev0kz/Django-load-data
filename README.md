@@ -37,14 +37,31 @@ Use the following command to start the postgres database service. Make sure you 
 Execute the following command to launch the django shell:  
 `python3 manage.py shell`   
 
- ## Benchmarking django `create`, `save` and `django_postgres_copy` methods 
+ ## Benchmarking django `django_postgres_copy`,  and `create` methods 
  Inside the django shell, execute the following command:  
  `from supermarket.models import visitors`  
  
-Then run the following python command to upload a csv file from django to postgres database using the method `django_postgres_copy` :
+ `from timeit import default_timer as timer`  
+ 
+ ### Load data with django_postgres_copy
+ 
+Then run the following python command via the django shell to upload a csv file from django to postgres database using the method `django_postgres_copy`.
 ```
 start_time = timer()
 visitors.objects.from_csv('visitors.csv')
 finish_time = timer()
 print(finish_time - start_time)
 ```  
+
+### Load data with django create method  
+Run the following python command via the django shell to upload a csv file from django to postgres database using the create method `create()` method. 
+```
+start = timer()
+data = csv.DictReader(open("visitors.csv")) 
+for row in data:
+     visitors.objects.create(name=row['name'], location=row['location'],
+     country=row['country'], email=row['email'])
+end = timer()
+print("records inserted from csv file to postgres database")
+print(end - start)
+```
