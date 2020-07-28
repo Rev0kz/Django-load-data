@@ -37,7 +37,13 @@ Use the following command to start the postgres database service. Make sure you 
 
 ### Create a postgres database
 Use the command to create a postgres database named supermarket:
-`CREATE DATABASE supermarket` 
+`CREATE DATABASE supermarket`   
+
+### Create a user for the database
+`CREATE USER sysadmin WITH PASSWORD 'sysmap'  
+
+GRANT ALL PRIVILEGES ON DATABASE stock TO sysadmin`
+
 
 ### Edit django settings.py file 
 edit the settings.py file in django and replace the database configuration settings with that of `database_config.py` file
