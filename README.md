@@ -12,7 +12,9 @@ python version 3
 
 ### Installation 
 Install django framework and postgres database server using the following:   
-`pip3 install django==2.0.13`
+`pip3 install django==2.0.13`   
+
+`pip install Faker`
 
 `wget sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'`
 
