@@ -1,5 +1,5 @@
 # Django-load-data
-This show different ways you can load data from a django application to a postgres database
+This show different ways you can load data faster from a django application to a postgres database
 
 ## Requirement:  
 django version 2.0.13 
