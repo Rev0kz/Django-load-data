@@ -29,13 +29,22 @@ Use the following command to create a django project:
 ### Create a django app 
 `python3 manage.py startapp loadata`   
 
-
-
+### Start postgres database service
 Use the following command to start the postgres database service. Make sure you have already created your database already.    
 `service postgres start`   
 
+### Launch django shell
 Execute the following command to launch the django shell:  
-
 `python3 manage.py shell`   
 
-
+ ## Benchmarking django `create`, `save` and `django_postgres_copy` methods 
+ Inside the django shell, execute the following command:  
+ `from supermarket.models import visitors`  
+ 
+Then run the following python command to upload a csv file from django to postgres database using the method `django_postgres_copy` :
+```
+start_time = timer()
+visitors.objects.from_csv('visitors.csv')
+finish_time = timer()
+print(finish_time - start_time)
+```  
