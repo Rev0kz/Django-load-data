@@ -24,7 +24,11 @@ Install django framework and postgres database server using the following:
 
 `sudo apt-get update`
 
-`sudo apt-get install postgresql`
+`sudo apt-get install postgresql`  
+
+### Generate csv file with Faker 
+Run the following command to generate a csv file with python faker:
+`python3 generate_csvfile.py`
 
 ### Create a django project 
 Use the following command to create a django project:  
