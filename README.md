@@ -12,6 +12,8 @@ python version 3
 
 ### Installation 
 Install django framework and postgres database server using the following:   
+`pip install django-postgres-copy`
+
 `pip3 install django==2.0.13`   
 
 `pip install Faker`
