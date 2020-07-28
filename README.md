@@ -40,7 +40,7 @@ Use the command to create a postgres database named supermarket:
 `CREATE DATABASE supermarket`   
 
 ### Create a user for the database
-`CREATE USER sysadmin WITH PASSWORD 'sysmap'  
+`CREATE USER sysadmin WITH PASSWORD 'sysmap'`  
 
 `GRANT ALL PRIVILEGES ON DATABASE stock TO sysadmin`
 
