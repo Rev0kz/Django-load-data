@@ -29,7 +29,7 @@ Use the following command to create a django project:
 `django-admin.py startproject workdemo` 
 
 ### Create a django app 
-`python3 manage.py startapp loadata`   
+`python3 manage.py startapp supermarket`   
 
 ### Start postgres database service
 Use the following command to start the postgres database service. Make sure you have already created your database already.    
