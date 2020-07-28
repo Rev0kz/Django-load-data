@@ -31,7 +31,14 @@ Use the following command to create a django project:
 
 ### Start postgres database service
 Use the following command to start the postgres database service. Make sure you have already created your database already.    
-`service postgres start`   
+`service postgres start`
+
+### Create a postgres database
+Use the command to create a postgres database named supermarket:
+`CREATE DATABASE supermarket` 
+
+### Edit django settings.py file 
+edit the settings.py file in django and replace the database configuration settings with that of database_config.py file
 
 ### Launch django shell
 Execute the following command to launch the django shell:  
