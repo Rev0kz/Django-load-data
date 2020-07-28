@@ -54,6 +54,7 @@ Execute the following command to launch the django shell:
 
 ### Migrate database
 `python3 manage.py makemigrations`
+
 `python3 manage.py migrate`
 
  ## Benchmarking django `django_postgres_copy`,  and `create` methods 
