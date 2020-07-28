@@ -50,7 +50,11 @@ edit the settings.py file in django and replace the database configuration setti
 
 ### Launch django shell
 Execute the following command to launch the django shell:  
-`python3 manage.py shell`   
+`python3 manage.py shell`
+
+### Migrate database
+`python3 manage.py makemigrations`
+`python3 manage.py migrate`
 
  ## Benchmarking django `django_postgres_copy`,  and `create` methods 
  Inside the django shell, execute the following command:  
