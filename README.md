@@ -27,7 +27,8 @@ Install django framework and postgres database server using the following:
 `sudo apt-get install postgresql`  
 
 ### Generate csv file with Faker 
-Run the following command to generate a csv file with python faker:
+Run the following command to generate a csv file with python faker
+
 `python3 generate_csvfile.py`
 
 ### Create a django project 
@@ -50,6 +51,8 @@ Use the command to create a postgres database named supermarket:
 
 `GRANT ALL PRIVILEGES ON DATABASE stock TO sysadmin`
 
+### Create model for database table
+Check out the file `models.py` to model a table in django
 
 ### Edit django settings.py file 
 edit the settings.py file in django and replace the database configuration settings with that of `database_config.py` file
