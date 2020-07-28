@@ -1,0 +1,4 @@
+start_time = timer()
+visitors.objects.from_csv('visitors.csv')
+finish_time = timer()
+print(finish_time - start_time)
