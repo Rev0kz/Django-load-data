@@ -42,7 +42,7 @@ Use the command to create a postgres database named supermarket:
 ### Create a user for the database
 `CREATE USER sysadmin WITH PASSWORD 'sysmap'  
 
-GRANT ALL PRIVILEGES ON DATABASE stock TO sysadmin`
+`GRANT ALL PRIVILEGES ON DATABASE stock TO sysadmin`
 
 
 ### Edit django settings.py file 
