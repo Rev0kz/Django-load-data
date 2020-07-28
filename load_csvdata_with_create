@@ -1,4 +1,4 @@
-tart = timer()
+start = timer()
 data = csv.DictReader(open("visitors.csv")) 
 for row in data:
      visitors.objects.create(name=row['name'], location=row['location'],
