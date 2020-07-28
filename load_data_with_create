@@ -1,0 +1,8 @@
+tart = timer()
+data = csv.DictReader(open("visitors.csv")) 
+for row in data:
+     visitors.objects.create(name=row['name'], location=row['location'],
+     country=row['country'], email=row['email'])
+end = timer()
+print("records inserted from csv file to postgres database")
+print(end - start)
